@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PFE</title>
+</head>
+<body>
+    <!-- the top page header, you may change it as you like -->
+    <header class="header">
+        <h1>projet PFE</h1>
+    </header>
+
+    <!-- the main part of the page -->
+    <main class="main">
+
+        <!-- the input part -->
+        <div class="main-col input-col">
+            <form>
+                <h2>Input</h2>
+                <div class="form-item">
+                    <p>choose the type of the file you want to import:</p>
+
+                    <div class="radio-item">
+                        <input type="radio" id="fileTypeImage" name="fileType" value="image" checked>
+                        <label for="fileTypeImage">image</label>
+                    </div>
+
+                    <div class="radio-item">
+                        <input type="radio" id="fileTypeVideo" name="fileType" value="video" >
+                        <label for="fileTypeVideo">video</label>
+                    </div>
+                </div>
+                
+                <div class="form-item">
+                    <label for="inputFile">click here to import the file</label>
+                    <input type="file" name="file" id="inputFile">
+
+                </div>
+            </form>
+
+            <div class="input-result">
+                <!-- here you should display the image or the video afer being imported -->
+                <img src="" alt="">
+                <video src=""></video>
+            </div>
+
+            <div class="error-box">
+                <p class="error">
+                    <!-- here you should display errors if there are any  -->
+                    there was an error
+                </p>
+
+                <button class="btn btn-red">delete</button>
+            </div>
+
+        </div>
+
+        <!-- the output part -->
+        <div class="main-col output-col">
+            <h2>output</h2>
+
+            <div class="container">
+                <div class="result">
+                    <!-- here you should display your output or a loading icon (or spinner) to show that it's loading -->
+                </div>
+
+                <div class="btns">
+                    <button class="btn btn-blue">zoom</button>
+                    <button class="btn btn-blue">crop</button>
+                    <button class="btn btn-blue">metadata</button>
+                    <button class="btn btn-green">save</button>
+                    <button class="btn btn-red">delete</button>
+                </div>
+
+                <textarea class="metadata-display" name="metadata" id="metadata" cols="30" rows="10" readonly>your metadata will be displayed here</textarea>
+            </div>
+        </div>
+
+        <!-- the functions part -->
+        <div class="main-col functions-col">
+            <h2>functions</h2>
+
+            <div class="container">
+                <!-- the 1st level of lists -->
+                <details class="details details-1">
+                    <summary>methodes simples</summary>
+
+                    <!-- the 2nd level of lists -->
+                    <!-- you may copy-paste and change according to your needs -->
+                    <details class="details details-2">
+                        <summary>brightness</summary>
+                        <input type="range" min="0" max="100" name="brightness" value="33">
+                    </details>
+
+
+                    <details class="details details-2">
+                        <summary>contrast</summary>
+                        <input type="range" min="0" max="100" name="contrast" value="33">
+                    </details>
+
+
+                    <details class="details details-2">
+                        <summary>sharpning</summary>
+                        <input type="range" min="0" max="100" name="sharpning" value="33">
+                    </details>
+                </details>
+
+                <details>
+                    <summary>methodes tradionnelles</summary>
+                </details>
+
+                <details>
+                    <summary>methodes complexes</summary>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

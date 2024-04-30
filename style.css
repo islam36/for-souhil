@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header h1 {
+  color: black;
+  font-size: 30px;
+}
+
+
+/* main tag styles */
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+/* styles applied to all main columns (by a column i mean a part) */
+.main .main-col {
+    width: 33%;
+    height: 100%;
+    margin: 10px 10px;
+    padding: 20px;
+    border: 2px green solid;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.input-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-col form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-col form h2 {
+    text-align: center;
+}
+
+/* styles applied to all buttons */
+.btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px black solid;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+
+.btn-green {
+    background-color: green;
+    color: white;
+}
+
+.btn-blue {
+    background-color: aqua;
+}
+
+
+.input-col .error-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-col .error-box .error {
+    color: red;
+    width: 80%;
+}
+
+
+
+.output-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.output-col .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.output-col .container .result {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+.metadata-display {
+    outline: none;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.functions-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.functions-col .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details {
+    cursor: pointer;
+}
+
+.details summary {
+    margin-top: 5px;
+}
+
+.details-2 {
+    margin-left: 20px;
+}
